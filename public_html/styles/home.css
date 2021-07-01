@@ -1,0 +1,170 @@
+#homeImage{
+  display: flex;
+  position: relative;
+  text-align: center;
+  background-image:  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+  ), url(../images/rcformal.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  height: auto;
+}
+
+#homeImage img{
+  width: 100%;
+  visibility: hidden;
+}
+
+#homeImageText>*{
+  color: #f2f2f2;
+}
+
+#aboutpic{
+  width: 50%;
+  padding: 10px;
+  align-self: start;
+}
+
+#abouttxt{
+  align-self: start;
+}
+
+#aboutsectiondiv .sectiontitle{
+  text-align: left;
+}
+
+#aboutsectiondiv p{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#mission h2{
+  margin-block-start: 0em;
+}
+
+#calsection{
+  width: 65%;
+}
+
+#pointssection{
+  width: 35%;
+  height: 100%;
+  align-self: start;
+}
+
+#platoonbox{
+  flex-direction: column;
+  border:1px solid black;
+}
+
+#platoonbox img{
+  padding: 20px;
+}
+
+#platoonbox p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#explorefurther button:last-of-type{
+  margin-right: 50px;
+}
+
+#explorefurther button{
+  padding: 8px;
+  margin: 10px;
+}
+
+#explorefurthertitle{
+  width: 40%;
+  font-size:25px;
+  font-weight: bold;
+}
+
+#explorebuttons{
+  width: 60%;
+}
+
+@media only screen and (max-width: 650px){
+  #calandplatoon{
+    flex-direction: column;
+  }
+
+  #pointssection{
+    width: 100%;
+  }
+
+  #calsection{
+    width: 100%;
+  }
+
+  #explorefurther{
+    flex-direction: column;
+  }
+
+  #explorebuttons{
+    width: 100%;
+  }
+
+  #explorefurthertitle{
+    width: 100%;
+    margin-block-end: 0em;
+  }
+
+  #homeImage{
+    display: block;
+    background-image: url(../images/rcformal.png);
+  }
+
+  #homeImageText{
+    position: relative;
+    transform: translate(-50%, 0%);
+    padding: 4px;
+  }
+
+  #homeImageText >*{
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  #explorefurther button:last-of-type{
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  #aboutsectiondiv{
+    flex-direction: column;
+  }
+
+  #aboutpic{
+    width: 100%;
+  }
+
+  #abouttxt{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #abouttxt div{
+    padding: 13px;
+  }
+
+  #status .sectiontitle, #mission .sectiontitle{
+    text-align: center;
+  }
+  
+  #status h2{
+    margin-block-start: 0em;
+  }
+
+}
+
+@media only screen and (min-width: 800px){
+  #homeImage img{
+    height: 60vh;
+  }
+}

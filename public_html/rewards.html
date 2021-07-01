@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Platoon Rewards Log Sheet</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <link href="styles/rewards.css" rel="stylesheet" type="text/css" />
+        <script src="scripts/parseFile.js"></script>
+        <script src="scripts/createLogsTable.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="flexcontainer">
+                <div class="lefttitle">
+                    <a id="headercrest"><img src="images/rccrest.png" /></a>
+                    <a id="pagetitle">Raffles Institution Red Cross</a>
+                </div>
+                <div class='navlinks'>
+                    <a href="home.html">Home</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+            </nav>
+        </header>
+        <h2 class="sectiontitle"> Platoon Points Reward Logs </h2>
+        <div id="selectplatoonform">
+          <label for="cars" class="sectiontitle">Choose Platoon:</label>
+          <select id="platoon" name="platoon">
+            <option value="epsilon">Epsilon</option>
+            <option value="iota">Iota</option>
+            <option value="omega">Omega</option>
+          </select>
+        </div>
+        <div class="pagenav flexcontainer tablecontrols">
+          <button class="leftarrowbutton" onclick="advancePage(-1);document.body.scrollTop = 0;document.documentElement.scrollTop = 0;"></button>
+          <p class="pagenumber"> Page 1/1 </p>
+          <button class="rightarrowbutton" onclick="advancePage(1);document.body.scrollTop = 0;document.documentElement.scrollTop = 0;"></button>
+        </div>
+        <div id="tablediv">
+          <table id="logstable">
+            <tr>
+              <th> Date </th>
+              <th> Task Completed / Misbehaviour </th>
+              <th> Points Awarded / Lost </th>
+            </tr>
+          </table>
+        </div>
+        <div class="pagenav flexcontainer tablecontrols">
+          <button class="leftarrowbutton" onclick="advancePage(-1);document.body.scrollTop = 0;document.documentElement.scrollTop = 0;"></button>
+          <p class="pagenumber"> Page 1/1 </p>
+          <button class="rightarrowbutton" onclick="advancePage(1);document.body.scrollTop = 0;document.documentElement.scrollTop = 0;"></button>
+        </div>
+        <footer>
+            <nav class="flexcontainer">
+                <div class="lefttitle">
+                    <a id="bringiton"><img src="images/bringiton.png" /></a>
+                    <p id="biotext"> Bring it on! </p>
+                </div>
+                <div id="linksandacknowledgements">
+                    <div class="flexcontainer">
+                        <div class = "navlinks">
+                          <a id="linkheader"> Links: </a> 
+                          <a href="home.html"> Home </a>
+                          <a href="blogs.html"> Blogs </a>
+                          <a href="resources.html"> Resources </a>
+                          <a href="gallery.html"> Gallery </a>
+                          <a href="credits.html"> Credits </a>
+                        </div>
+                    </div>
+                    <p id="disclaimer"> Images used belong to respective authors and used with permission. </p>
+                </div>
+            </nav>
+        </footer>
+    </body>
+</html>

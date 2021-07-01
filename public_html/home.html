@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Raffles Institution Red Cross</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="styles/home.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/parseFile.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="flexcontainer">
+        <div class="lefttitle">
+          <a id="headercrest"><img src="images/rccrest.png" /></a>
+          <a id="pagetitle">Raffles Institution Red Cross</a>
+        </div>
+        <div class='navlinks'>
+          <a href="home.html">Home</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="resources.html">Resources</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main content -->
+    <!-- top image -->
+    <div id="homeImage">
+      <!-- below image is to force div to the correct size after resizing. It is not shown. -->
+      <img src="images/rcformal.png" /> 
+      <div class="centered" id="homeImageText">
+        <h3 class="sectiontitle"> Introduction </h3>
+        <p> RIRC is where you can learn subjects like First Aid, Disaster Management, Youth Ambassador etc. to help preserve life and reduce suffering. </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- About section -->
+    <h1 class="sectiontitle"> About </h1>
+    <div class="flexcontainer" id="aboutsectiondiv">
+      <img src="images/redcrossexp.png" id="aboutpic" />
+      <div id="abouttxt">
+        <div id="mission">
+          <h2 class="sectiontitle"> Mission: </h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi proin sed libero enim sed. Egestas egestas fringilla phasellus faucibus scelerisque. Enim ut sem viverra aliquet eget sit amet tellus. Non odio euismod lacinia at quis. </p>
+        </div>
+        <div id="status">
+          <h2 class="sectiontitle"> Our Current Status: </h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi proin sed libero enim sed. Egestas egestas fringilla phasellus faucibus scelerisque. Enim ut sem viverra aliquet eget sit amet tellus. Non odio euismod lacinia at quis. </p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- calendar and platoon points -->
+    <div class = "flexcontainer" id="calandplatoon">
+      <div id="calsection">
+        <h2 class="sectiontitle"> Upcoming Events </h2>
+        <div class="responsive">
+          <iframe id="eventcalendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FSingapore&amp;src=NGMwMW40bHRmYTR1a2VjMnRodTI3Zm9yZ29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4uc2luZ2Fwb3JlI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23C0CA33&amp;color=%230B8043&amp;showTabs=1&amp;showPrint=0&amp;showNav=1&amp;showTitle=1&amp;showCalendars=0&amp;title=Red%20Cross%20Events" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+      <div id="pointssection">
+        <h2 class="sectiontitle"> Platoon Points </h2>
+        <div class="flexcontainer" id="platoonbox">
+          <div class="flexcontainer" id="epsilon">
+            <img src="images/epsilon.png" />
+            <p> Epsilon: 5000 points </p>
+          </div>
+          <div class="flexcontainer" id="iota">
+            <img src="images/iota.png" />
+            <p> Iota: 5000 points </p>
+          </div>
+          <div class="flexcontainer" id="omega">
+            <img src="images/omega.png" />
+            <p> Omega: 5000 points </p>
+          </div>
+          <button type="button" onclick="location.href='rewards.html';"> Show All Updates </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="explorefurther" class="flexcontainer">
+      <p id="explorefurthertitle"> Explore our site further: </p>
+      <div id="explorebuttons">
+        <div class="flexcontainer">
+          <button type="blog" onclick="location.href='/blogs.html';"> Blogs </button>
+          <button type="button" onclick="location.href='/resources.html';"> Resources </button>
+          <button type="button" onclick="location.href='/gallery.html';"> Gallery </button>
+        </div>
+      </div>
+    </div>
+    <!-- end of main content -->
+    
+    <footer>
+      <nav class="flexcontainer">
+        <div class="lefttitle">
+          <a id="bringiton"><img src="images/bringiton.png" /></a>
+          <p id="biotext"> Bring it on! </p>
+        </div>
+        <div id="linksandacknowledgements">
+          <div class="flexcontainer" id="linksdisclaimerbox">
+            <div class = "navlinks">
+              <a id="linkheader"> Links: </a> 
+              <a href="home.html"> Home </a>
+              <a href="blogs.html"> Blogs </a>
+              <a href="resources.html"> Resources </a>
+              <a href="gallery.html"> Gallery </a>
+              <a href="credits.html"> Credits </a>
+            </div>
+          </div>
+          <p id="disclaimer"> Images used belong to respective authors and used with permission. </p>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>

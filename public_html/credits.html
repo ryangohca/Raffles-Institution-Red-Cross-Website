@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Credits & Documentation</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <link href="styles/credits.css" rel="stylesheet" type="text/css" /> 
+    </head>
+    <body>
+        <header>
+            <nav class="flexcontainer">
+                <div class="lefttitle">
+                    <a id="headercrest"><img src="images/rccrest.png" /></a>
+                    <a id="pagetitle">Raffles Institution Red Cross</a>
+                </div>
+                <div class='navlinks'>
+                    <a href="home.html">Home</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+            </nav>
+        </header>
+        <h2 class="sectiontitle"> Ryan Goh (3K)'s Documentation </h2>
+        <ol>
+          <li>
+            <h4> Planning Phrase </h4>
+            <p> The planning phrase had definitely helped me much in this project. It had helped me write my thoughts of the initial design out on paper, and also created a reference point for me to refer back to when I have to style something. A huge example could be the design of the home page. It consists of many elements coming together to form a nice-looking home page, such as navigation bars, picture titles, even a calandar. With so much information to include, one would be overwhelmed to create and style the elements nicely in such a short period of time without any planning. However, with the wireframes planning sheet, one can then easily follow the plans to style the page accordingly, with clear picture of what the page should look like. In the end, I had mostly followed the planning in wireframes.txt, and slowly design each part of the page in a top-down manner as per the wireframe planning sheet. It made the task so much less daunting and easier to manage. Moreover, the site looked mostly like how I had envisioned it (in the planning stage) to be!</p>
+          </li>
+          <li>
+            <h4> Overcoming Challenges </h4>
+            <p> I had definitely faced many challenges when doing this project. When I just started, I was quite new to CSS and HTML, so I find it very difficult to style the pages. In fact, when I started, I found myself stuck with styling just the navigation bar! The navigation links just "refused" to right justify. With the help from Google and my teacher, I managed to overcome this problem through realising that a flexbox with "justify-content: space-between;" would space the two divisions (one that I intend to left-justify, one that I intend to right justify) furthest apart, which automatically justifies the content into their right positions as in the wireframe. As I went on with the project, I tried to use Google to search on many tips and tricks, for example, how to style an embed Google Calendar such that it fits screen size, how to use media queries to conditionally reorder elements in order to fit screen size, how to make a collapsable header, even how to full-justify this text! As I realised, using Google is very effective in solving some simple style issues, as many people would have probably faced, asked and solved these issues, in which I can take inspiration from. Little by little, I managed to overcome all of the small tasks that I set for myself in order to finish this whole website. For me, the challenge that I feel the most ecstatic after solving it, is the problematic alignment of the table of image cards after collapsing the headers in the resources page. Firstly, I wanted the number of columns to change as the page resizes. This is not easily done with the table tag. I tried to search for resources, but none of the resources available can help in changing the number of columns of a table in accordance to viewport width. In the end, I resorted to Javascript to manually calculate the number of columns that can be displayed with the viewport width. It worked - but I faced another problem. The height of the image cards are not the same! Not only does it look quite messy, but it also causes "holes" in the table of image cards after resizing which is very unsightly. Yet again, Google does not realy help; so in the end I used Javascript (again) to calculate the maximum height of the image cards and then set the image cards to the same maximum width. I was so relieved and felt so accomplished when it finally worked, and the image cards styled perfectly aligned. 
+          </li>
+          <li>
+            <h4> Project Special Mention </h4>
+            <p> The one piece of my project that I am most proud about is being able to dynamically load content from csv and relevant html files for my blogs page. Due to the nature of blogs and logs, I would have to implement an easy way for users to add their own blogs and platoon points logs to my website. As implementing a working database system would be overly complex, I decided to use the simpler method of using csv files to store the data. It was still a very difficult task. Firstly, I would have to know how to read files using Javascript. However, it is not as simple as it looks. As it turned out, I would need to send a "GET" request to the browser to load the file, wait for it to respond, before I can read the file. Fortunately, using Google, this issue is solved quickly. Next, I would need to display the html files that I get from the csv file. This involves a lot of creation of new elements (div to hold the html file, title etc.), just so that the blog looks relatively nice (bolded title, responsive images etc.) while still having the essential content. Next, since my site has pages for blogs, we need to implement a page system where we show 3 blogs at one time, and then the user can click the left/right arrow buttons to see more. This involves even more Javascript as we now have to save the current index of the first blog shown, and then advance this variable to point to the right current first blog when the user clicks the left or right arrow button, so that older / newer blogs can be shown. Last but not least, we need to implement functionality so that the user can filter out blogs with the month / year that the user wants. To create the sorted navigation list, I have to retrieve the dates from the csv, make sure that all the year/month pair are unique, sort the year/month pairs in chronological order, then display the lists with workable links that actually filter the blogs. Sorting dates was not easy, but after using suitable data structures such as sets, converting to Dates from strings etc, the list was finally done. And with more (painful) scripting that allows filtering of data that contains a specific year or month/year pair, the filter functionality also worked! For sure, that was the most tiring functionality to be added. However, it was all worth it when it succeeded! In the end, I wish that this project would be a stepping stone to help Red cross organise information to our cadets better, and also create a platform where our seniors can communicate (through blogs) to our juniors in a more light-hearted way. I wish that this project would help revive the old <a href="http://rircc005.blogspot.com/"> RIRC Blogs</a> page, and add additonal functionality (such as platoon points log sheet) to further reassure cadets that they can find their information all in this webpage.
+          </li>
+          <li>
+            <h4> References </h4>
+            <ul>
+              <li>
+                <p> Images from: </p>
+                <ul>
+                  <li> <p> <a href="http://rircc005.blogspot.com/"> http://rircc005.blogspot.com/ </a> </p> </li>
+                  <li> <p> <a href="https://docs.google.com/document/d/1480egmrYpFC3yrY8PDHv5y8xc9-vTodgXmeg9NrEAPg"> https://docs.google.com/document/d/1480egmrYpFC3yrY8PDHv5y8xc9-vTodgXmeg9NrEAPg/edit </a> </p> </li>
+                  <li> <p> <a href="https://docs.google.com/presentation/d/1qJIuw9XQtL-pQ0mrZxA9_iAflBT5kZZnc5TmBbQP9aM/edit?usp=sharing"> https://docs.google.com/presentation/d/1qJIuw9XQtL-pQ0mrZxA9_iAflBT5kZZnc5TmBbQP9aM/edit?usp=sharing </a> </p> </li>
+                  <li> <p> <a href="https://www.youtube.com/watch?v=h4o_fEm2VBs&t=213s"> https://www.youtube.com/watch?v=h4o_fEm2VBs&t=213s </a> (at that exact second the screenshot was taken)</p> </li>
+                </ul>
+              </li>
+              <li>
+                <p> Blog content from: </p>
+                <ul>
+                  <li> <p> <a href="http://rircc005.blogspot.com/"> http://rircc005.blogspot.com/ </a> </p> </li>
+                </ul>
+              </li>
+              <li> 
+                <p> Some code inspired by: </p>
+                <ul>
+                  <li> <p> <a href="https://gist.github.com/Jezternz/c8e9fafc2c114e079829974e3764db75"> https://gist.github.com/Jezternz/c8e9fafc2c114e079829974e3764db75 </a> (code to parse csv text) </p> </li>
+                  <li> <p> <a href="https://stackoverflow.com/questions/14446447/how-to-read-a-local-text-file"> https://stackoverflow.com/questions/14446447/how-to-read-a-local-text-file </a> (code to load files) </p> </li>
+                  <li> <p> <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible"> https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible </a> (code to style collapsibles) </p> </li>
+                  <li> <p> <a href="https://css-tricks.com/design-considerations-text-images/"> https://css-tricks.com/design-considerations-text-images/ </a> (for tinting of image at home page) </p> </li>
+                  <li> <p> <a href="https://www.w3schools.com/howto/howto_js_topnav.asp"> https://www.w3schools.com/howto/howto_js_topnav.asp </a> (for styling of navigation bar) </p> </li>
+                  <li> <p> <a href="https://community.weebly.com/t5/How-Do-I-In-the-Community/How-do-I-make-my-google-calendar-responsive/td-p/109757"> https://community.weebly.com/t5/How-Do-I-In-the-Community/How-do-I-make-my-google-calendar-responsive/td-p/109757 </a> (for styling of a responsive Google Calendar iframe) </p> </li>
+                  <li> <p> <a href="https://css-tricks.com/snippets/css/css-triangle/"> https://css-tricks.com/snippets/css/css-triangle/ </a> (inspiration for the left/right arrow buttons in blogs and resources page) </p> </li>
+                  <li> <p> <a href="https://moderncss.dev/custom-select-styles-with-pure-css/"> https://moderncss.dev/custom-select-styles-with-pure-css/ </a> (code to style custom select dropdown button) </p> </li>
+                  <li> <p> <a href="https://stackoverflow.com/questions/51295378/start-http-web-server-then-open-browser"> https://stackoverflow.com/questions/51295378/start-http-web-server-then-open-browser </a> (code to start a new server and automatically open webpage) </p> </li>
+                  <li> <p> <a href="https://www.w3schools.com/howto/howto_js_scroll_to_top.asp"> https://www.w3schools.com/howto/howto_js_scroll_to_top.asp </a> (code for "back to top" functionality for my next/previous page arrow buttons) </p> </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <footer>
+            <nav class="flexcontainer">
+                <div class="lefttitle">
+                    <a id="bringiton"><img src="images/bringiton.png" /></a>
+                    <p id="biotext"> Bring it on! </p>
+                </div>
+                <div id="linksandacknowledgements">
+                    <div class="flexcontainer">
+                        <div class = "navlinks">
+                          <a id="linkheader"> Links: </a> 
+                          <a href="home.html"> Home </a>
+                          <a href="blogs.html"> Blogs </a>
+                          <a href="resources.html"> Resources </a>
+                          <a href="gallery.html"> Gallery </a>
+                          <a href="credits.html"> Credits </a>
+                        </div>
+                    </div>
+                    <p id="disclaimer"> Images used belong to respective authors and used with permission. </p>
+                </div>
+            </nav>
+        </footer>
+    </body>
+</html>

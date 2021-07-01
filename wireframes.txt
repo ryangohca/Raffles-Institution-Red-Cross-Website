@@ -1,0 +1,15 @@
+1.  Homepage:
+●   Desktop: https://wireframe.cc/dsuscq
+●   Mobile: https://wireframe.cc/sWlkRr 
+2.  Blog Page:
+●   Desktop: https://wireframe.cc/rX7DNh
+●   Mobile: https://wireframe.cc/rRXI3y 
+3.  Resources Page:
+●   Desktop: https://wireframe.cc/OovpLu
+●   Mobile: https://wireframe.cc/DutOUF
+4.  Gallery Page (not implemented for the layout is very similar to Resources and Blog Page):
+●   Desktop: https://wireframe.cc/V9QpRm
+●   Mobile: https://wireframe.cc/4WxNAx 
+5.  Reward Logs Page
+●   Desktop: https://wireframe.cc/ma6yUp
+●   Mobile: https://wireframe.cc/tRE0vw 

@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B'; /* '+' sign */
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212"; /* '-' sign */
+}
+
+.content {
+  padding: 0px 1px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.resourcesHeading, .resourcesDiv{
+  width: 75%;
+  margin: auto;
+  display: block;
+}
+
+.resourcesDiv .flexcontainer{
+  justify-content: flex-start;
+}
+
+.imagecard{
+  width: 50%;
+  float: left;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.imagecard:hover{
+  border: 2px solid black;
+}
+
+.imagecard a{
+  text-decoration: none;
+  color: black;
+}
+
+.imagecard a img{
+  width: 100%;
+}
+
+.imagecard a:visited{
+  color: black;
+}
+
+.imagecard a .desc{
+  padding: 15px;
+  text-align: center;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

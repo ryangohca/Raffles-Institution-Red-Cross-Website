@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Blogs</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <link href="styles/blogs.css" rel="stylesheet" type="text/css" />
+        <script src="scripts/parseFile.js"></script>
+        <script src="scripts/loadblogs.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="flexcontainer">
+                <div class="lefttitle">
+                    <a id="headercrest"><img src="images/rccrest.png" /></a>
+                    <a id="pagetitle">Raffles Institution Red Cross</a>
+                </div>
+                <div class='navlinks'>
+                    <a href="home.html">Home</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+            </nav>
+        </header>
+        <h2 class="sectiontitle"> Blogs </h2>
+        <div id="mainblogcontent" class="flexcontainer">
+          <div id="blogposts">
+            <div id="blogheading" class="flexcontainer">
+              <h2 class="sectiontitle" id="allpoststitle"> All Posts </h2>
+              <button id="showallbutton" onclick="showBlogsByMonth();" disabled> Show All Posts </button>
+            </div>
+            <div class="pagenav flexcontainer">
+              <button class="leftarrowbutton" onclick="advancePage(-1);document.body.scrollTop = 0;document.documentElement.scrollTop = 0;"></button>
+              <p class="pagenumber"> Page 1/1 </p>
+              <button class="rightarrowbutton" onclick="advancePage(1);document.body.scrollTop = 0;document.documentElement.scrollTop = 0;;"></button>
+            </div>
+            <div id="blogsdiv">
+              <!-- blogs dynamically added here from loadblogs.js -->
+            </div>
+            <div class="pagenav flexcontainer">
+              <button class="leftarrowbutton" onclick="advancePage(-1);document.body.scrollTop = 0;document.documentElement.scrollTop = 0;"></button>
+              <p class="pagenumber"> Page 1/1 </p>
+              <button class="rightarrowbutton" onclick="advancePage(1);document.body.scrollTop = 0;document.documentElement.scrollTop = 0;"></button>
+            </div>
+          </div>
+          <div id="showbymonth">
+            <h2 class="sectiontitle"> Show by Month </h2>
+            <div id="yearlist">
+              <!-- add links to valid months only from loadblogs.js-->
+            </div>
+          </div>
+        </div>
+        <footer>
+            <nav class="flexcontainer">
+              <div class="lefttitle">
+                  <a id="bringiton"><img src="images/bringiton.png" /></a>
+                  <p id="biotext"> Bring it on! </p>
+              </div>
+              <div id="linksandacknowledgements">
+                  <div class="flexcontainer">
+                      <div class = "navlinks">
+                        <a id="linkheader"> Links: </a> 
+                        <a href="home.html"> Home </a>
+                        <a href="blogs.html"> Blogs </a>
+                        <a href="resources.html"> Resources </a>
+                        <a href="gallery.html"> Gallery </a>
+                        <a href="credits.html"> Credits </a>
+                      </div>
+                  </div>
+                  <p id="disclaimer"> Images used belong to respective authors and used with permission. </p>
+              </div>
+            </nav>
+        </footer>
+    </body>
+</html>

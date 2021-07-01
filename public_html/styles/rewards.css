@@ -1,0 +1,78 @@
+#selectplatoonform{
+  width: 75%;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+}
+
+#selectplatoonform label{
+  text-decoration: none;
+  width: 30%;
+  font-size: 20px;
+}
+
+#platoon{
+  width: 70%;
+  min-width: 15ch;
+  border: 1px solid #777;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+#tablediv{
+  width: 75%;
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+}
+
+#logstable{
+  width: 100%;
+  border-spacing: 0px;
+}
+
+#logstable tr >*{
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#logstable tr th{
+  background-color: rgb(107, 107, 107);
+}
+
+#logstable tr th:nth-child(1), #logstable td th:nth-child(1){
+  width: 20%;
+}
+
+#logstable tr th:nth-child(2), #logstable td th:nth-child(2){
+  width: 50%;
+}
+
+#logstable tr th:nth-child(3), #logstable td th:nth-child(3){
+  width: 30%;
+}
+
+.addpoints td{
+  background-color: rgb(3, 180, 3);
+}
+
+.subtractpoints td{
+  background-color: rgb(255, 46, 46);
+}
+
+.tablecontrols{
+  width: 75%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 650px){
+  #tablediv, #selectplatoonform, .tablecontrols{
+    width: 100%;
+  }
+}
